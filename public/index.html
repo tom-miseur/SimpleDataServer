@@ -1,0 +1,46 @@
+<html>
+
+<head>
+   <script src="public/jquery-3.6.0.min.js"></script>
+   <script src="public/jquery.dataTables.min.js" async></script>
+   <script src="public/dataTables.bootstrap5.min.js" async></script>
+   <script src="public/script.js" async></script>
+   <link rel="stylesheet" href="public/style.css">
+   <link rel="stylesheet" href="public/dataTables.bootstrap5.min.css">
+   <link rel="stylesheet" href="public/bootstrap.min.css">
+</head>
+
+<body>
+   <div id="info">
+      <h1>Simple Data Server</h1>
+      <a href="#" class="btn btn-secondary btn-sm" id="load" onclick="document.getElementById('file-input').click()">Load</a>
+      <input id="file-input" type="file" accept=".json" style="display: none;"/>
+      <a href="#" class="btn btn-secondary btn-sm disabled" id="save" onclick="save()">Save</a>
+      <p>Connected Clients: <span id="clients">0</span></p>
+      <p>
+         <input type="text" placeholder="Search..." id="search">
+      </p>
+   </div>
+   <div id="logContainer">
+      <table id="logTable">
+         <tr>
+            <td valign="bottom">
+               <div id="log" style="overflow:auto"></div>
+            </td>
+         </tr>
+      </table>
+   </div>
+
+
+   <div id="dataTables">
+      <table id="default" class="table table-striped compact">
+         <thead>
+            <tr>
+               <th>Key</th>
+            </tr>
+         </thead>
+      </table>
+   </div>
+</body>
+
+</html>

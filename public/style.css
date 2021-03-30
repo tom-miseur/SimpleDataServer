@@ -1,0 +1,78 @@
+body {
+  margin: 5px !important;
+}
+
+.dataTables_wrapper {
+  min-width: 24%;
+  margin: 5px;
+}
+
+.dataTables_length, .dataTables_info, .paginate_button {
+  font-size: 12px;
+}
+
+.dataTables_length {
+  float: left;
+  padding: 8px;
+}
+
+.pagination {
+  float: right;
+}
+
+.dataTables_info {
+  padding-top: unset !important;
+}
+
+/* _grid.scss adding horizontal scrollbar with this... */
+.row {
+  margin-right: unset !important;
+  margin-left: unset !important;
+}
+
+.table td, .table th {
+  padding: 0 0 0 5px !important;
+
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table thead,
+.table th {
+  text-align: center;
+}
+
+#log {
+  height: 200px;
+  border: solid 1px gray;
+}
+
+.logEntry {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#dataTables {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#info {
+  float: left;
+  width: 50%;
+}
+
+#logContainer {
+  float: right;
+  width: 50%;
+}
+
+#logTable {
+  width: 100%;
+  table-layout: fixed;
+}
