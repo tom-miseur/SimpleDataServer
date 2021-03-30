@@ -46,6 +46,7 @@ From the admin interface, you can also Save and Load. Save will result in a JSON
 
 ## TODO
 
+- control of data from the admin UI
 - key=value `get`/`set` commands for retrieving strings, integers, and booleans
 - a UI for key=value pairs in the admin interface
 - `increment` command for integer values, useful for counters
