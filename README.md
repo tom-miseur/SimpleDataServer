@@ -26,7 +26,7 @@ This software is **not** Production-ready; this is a work in progress (this is m
 
 Upon running `go run server.go`, you should be presented with a console message `Server ready: http://localhost:81/` (I'll make the port configurable at some point, but it is easily changed on line 17 in server.go). Opening the URL will present you with an admin interface that allows you to see the data currently stored on the server. As this admin interface also makes use of WebSocket, the updates appear in real-time without requiring any refreshing of the page. More on the admin interface below.
 
-Data can be added to the server by connecting to `ws://localhost:81/connect` (use your public IP if connecting from other machines; make sure inbound firewall ports are opened). Once a connection has been established, the server will accept stringified JSON objects containing a `command`, a `key`, and one or more `values`. See `test.js` for an example k6 JS script.
+Data can be added to the server by connecting to `ws://localhost:81/connect` (use your public IP if connecting from other machines; make sure inbound firewall ports are opened). Once a connection has been established, the server will accept stringified JSON objects containing a `command`, a `key`, and one or more `values`. See `example_k6.js` for an example k6 JS script.
 
 Currently, the supported `commands` are:
 
